@@ -1,0 +1,12 @@
+[Unit]
+Description=CannaBliss Orders  Bot
+After=network.target
+
+[Service]
+User=jay
+WorkingDirectory=/home/jay/cannabliss-bot/
+ExecStart=/usr/bin/python3 /home/jay/cannabliss-bot/cannablissbot.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
